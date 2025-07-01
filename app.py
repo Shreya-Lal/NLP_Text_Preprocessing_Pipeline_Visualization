@@ -110,22 +110,23 @@ def highlight_differences(original, processed):
     
     return ' '.join(html_output)
 
-# Function to tokenize and highlight stopwords
-def tokenize_and_highlight(text, remove_stopwords=False):
-    tokens = word_tokenize(text)
-    
-    if not remove_stopwords:
-        return tokens, " ".join(tokens)
-    
+# Function for tokenization only
+def tokenize_text(text):
+    return word_tokenize(text)
+
+# Function for stopword removal and highlighting
+def remove_stopwords_and_highlight(tokens):
     # Highlight stopwords in red
     highlighted_tokens = []
+    filtered_tokens = []
     for token in tokens:
         if token in stop_words:
             highlighted_tokens.append(f'<span style="color:red; font-weight:bold">{token}</span>')
         else:
             highlighted_tokens.append(token)
+            filtered_tokens.append(token)
     
-    return tokens, " ".join(highlighted_tokens)
+    return filtered_tokens, " ".join(highlighted_tokens)
 
 # Function to apply stemming with highlighting
 def apply_stemming(tokens):
@@ -286,11 +287,11 @@ def process_text(text, text_cleaning, lowercase, expand_contractions_opt, remove
         
         #step_index += 1
     
-    # Step 2: Tokenization
-    tokens, tokens_html = tokenize_and_highlight(current_text, stopword_removal)
+    # Step 2: Tokenization (always without highlighting)
+    tokens = tokenize_text(current_text)
     results_html.append(f"<h3> Tokenization Input:</h3>"
                        f"<div style='background-color:#f8f0ff; padding:10px; border-radius:5px;'>"
-                       f"{tokens_html}</div>")
+                       f"{' '.join(tokens)}</div>")
     
     # Generate token IDs
     token_ids, token_id_map = generate_token_ids(tokens)
@@ -306,12 +307,10 @@ def process_text(text, text_cleaning, lowercase, expand_contractions_opt, remove
     
     # Step 3: Stopword Removal
     if stopword_removal:
-        # Get tokens without stopwords
-        filtered_tokens = [token for token in tokens if token not in stop_words]
-        _, tokens_html = tokenize_and_highlight(" ".join(tokens), True)
+        filtered_tokens, highlighted = remove_stopwords_and_highlight(tokens)
         results_html.append(f"<h3> After Stopword Removal:</h3>"
                            f"<div style='background-color:#fff0f5; padding:10px; border-radius:5px;'>"
-                           f"{tokens_html}</div>")
+                           f"{highlighted}</div>")
         tokens = filtered_tokens
         #step_index += 1
     
