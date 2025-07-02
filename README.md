@@ -1,10 +1,10 @@
 # NLP_Text_Preprocessing_Pipeline_Visualization
 
-![alt text]("nlp_text_processing.mp4")
+![Watch the Video]("nlp_text_processing.mp4")
 
 Welcome! This app visually demonstrates essential preprocessing steps in NLP—like tokenization, stemming, and lemmatization— <b>before</b> diving into code.By using this visualization tool, you'll develop an intuitive understanding of how each preprocessing step affects your text data, helping you make better decisions when preparing text for your NLP applications. 
 
-![alt text]("nlp.png")
+![Image]("nlp.png")
 
 ## Explanation and Usage
 ### What is Text Pre-processing?
