@@ -1,20 +1,26 @@
 # NLP_Text_Preprocessing_Pipeline_Visualization
 
-<a href="https://huggingface.co/spaces/ShreyaL/NLP_preprocessing_playground" target="_blank">
 <figure style="text-align: center;">
-  <img src="nlp_text_processing.gif" alt="Click on the GIF to go to the Gradio app" width="1000"/>
-  <figcaption><strong>Figure 1:</strong> This GIF demonstrates the preprocessing pipeline. </figcaption>
+  <a href="https://your-gradio-app-link.com" target="_blank">
+    <img src="nlp_text_processing.gif" alt="Click on the GIF to go to the Gradio app" width="1000"/>
+  </a>
+  <figcaption><strong>Figure 1:</strong> This GIF demonstrates the preprocessing pipeline.</figcaption>
 </figure>
-</a>
+
+
+Check out [Gradio Text Pre-processing App](https://huggingface.co/spaces/ShreyaL/NLP_preprocessing_playground) for Demo.<br>
 
 An interactive Gradio app that demonstrates comprehensive text preprocessing techniques for Natural Language Processing (NLP). Visualize how each preprocessing step transforms your text with color-coded changes and explore tokenization, stemming, and lemmatization in real-time. 
 
-<figure style="text-align: center;">
+<!-- <figure style="text-align: center;">
   <img src="nlp.png" alt="Demo Screenshot" width="1000"/>
   <figcaption><strong>Figure 2:</strong> Screenshot of the NLP preprocessing pipeline.</figcaption>
-</figure>
+</figure> -->
+<p align ="center">
+  <img src="nlp.png" alt="Demo Screenshot" width="1000"><br>
+  <strong>Figure 2:</strong> Screenshot of the NLP preprocessing pipeline.
+</p>
 
-Check out [Gradio Text Pre-processing App](https://huggingface.co/spaces/ShreyaL/NLP_preprocessing_playground) for Demo.
 
 ## Key Features
 - 10+ Text Cleaning Operations: Lowercasing, contraction expansion, URL removal, accent removal, and more
