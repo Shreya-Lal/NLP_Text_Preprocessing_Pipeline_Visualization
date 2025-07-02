@@ -9,6 +9,12 @@
 
 
 Check out [Gradio Text Pre-processing App](https://huggingface.co/spaces/ShreyaL/NLP_preprocessing_playground) for Demo.<br>
+<!-- <a href="https://huggingface.co/spaces/ShreyaL/NLP_preprocessing_playground" target="_blank">
+  <figure style="text-align: center;">
+    <img src="nlp_text_processing.gif" alt="Click on the GIF to go to the Gradio app" width="1000"/>
+    <figcaption><strong>Figure 1:</strong> This GIF demonstrates the preprocessing pipeline. </figcaption>
+  </figure>
+</a> -->
 
 An interactive Gradio app that demonstrates comprehensive text preprocessing techniques for Natural Language Processing (NLP). Visualize how each preprocessing step transforms your text with color-coded changes and explore tokenization, stemming, and lemmatization in real-time. 
 
@@ -20,7 +26,7 @@ An interactive Gradio app that demonstrates comprehensive text preprocessing tec
   <img src="nlp.png" alt="Demo Screenshot" width="1000"><br>
   <strong>Figure 2:</strong> Screenshot of the NLP preprocessing pipeline.
 </p>
-
+</figure> <br>
 
 ## Key Features
 - 10+ Text Cleaning Operations: Lowercasing, contraction expansion, URL removal, accent removal, and more
