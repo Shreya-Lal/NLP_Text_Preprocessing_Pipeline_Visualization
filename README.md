@@ -2,65 +2,123 @@
 
 <img src="nlp_text_processing.gif" alt="Alt text" width="800"/>
 
-Welcome! This app visually demonstrates essential preprocessing steps in NLP—like tokenization, stemming, and lemmatization— <b>before</b> diving into code.By using this visualization tool, you'll develop an intuitive understanding of how each preprocessing step affects your text data, helping you make better decisions when preparing text for your NLP applications. 
+An interactive Gradio app that demonstrates comprehensive text preprocessing techniques for Natural Language Processing (NLP). Visualize how each preprocessing step transforms your text with color-coded changes and explore tokenization, stemming, and lemmatization in real-time. 
 
 <img src="nlp.png" alt="Alt text" width="1000"/>
 
-## Explanation and Usage
-### What is Text Pre-processing?
-Text preprocessing is the essential first step in Natural Language Processing (NLP) that transforms 
-raw text into a clean, standardized format suitable for analysis.
-                    
-### Why Comprehensive Text Cleaning?
-Text cleaning is crucial for preparing raw text for NLP tasks. Different text sources (social media, documents, web content) 
-contain various types of noise that need to be addressed before analysis.
+## Key Features
+- 10+ Text Cleaning Operations: Lowercasing, contraction expansion, URL removal, accent removal, and more
 
-### Processing Workflow
-1. **Text Cleaning**: Optional step with various sub-operations
-2. **Tokenization**: Splitting text into individual tokens/words
-3. **Stopword Removal**: Filtering out common but unimportant words (e.g., "the", "and")
-4. **Stemming**: Reducing words to their root form (e.g., "running" → "run")
-5. **Lemmatization**: More sophisticated word normalization, uses dictionary forms (e.g., "better" → "good")
-6. **Token ID Generation**: Creating numerical representations
+- Visual Transformation Tracking: Color-coded changes show exactly what each step modifies
 
-### 🧹 Complete Text Cleaning Options:
-1. **Lowercase Conversion**: Standardizes text to lowercase
-2. **Contraction Expansion**: Converts shortened forms to full forms (e.g., "can't" → "cannot")
-3. **Accent Removal**: Normalizes special characters (e.g., "café" → "cafe")
-4. **URL Removal**: Eliminates web addresses
-5. **Non-Word/Whitespace Removal**: Removes special characters such as hashtags(#)
-6. **Punctuation Removal**: Strips punctuation marks
-7. **Digit Removal**: Eliminates numerical values
-8. **Whitespace Normalization**: Reduces multiple spaces to single spaces
-9. **Repeated Punctuation Handling**: Replaces multiple punctuation with single same punctuation
-10. **Twitter Handler and RT tags Removal**: Removes @mentions and retweet tags RT
-11. **Remove Emojis**: Removes Removes emoticons, symbols & pictographs, transport & map symbols, flags etc.   
-        
-### How to Use This Visualization Tool
-#### Understanding the Color Coding 
-Our app uses a visual system to help you understand each transformation:
+- Tokenization & NLP Processing: Stopword removal, stemming, and lemmatization
 
-🟢 Green text: New content added by the transformation <br>
+- Token ID Generation: Create numerical representations of tokens
 
-🔴 Red strikethrough: Content removed by the transformation <br>
+- Interactive Examples: Pre-loaded examples to demonstrate different transformations
 
-🟣 Purple: Stemmed versions of words (reduced to root form) <br>
+- Educational Resources: Detailed explanations and references for each step
 
-🔵 Blue: Lemmatized words (dictionary form) <br>
+## Installation
+1. Clone the repository (Bash command):
 
-<<<<<<< HEAD
-⚫ Black: Unchanged content <br>   
+```
+$ git clone https://github.com/yourusername/ nlp-text-preprocessing.git
 
-### Best Practices
+$ cd nlp-text-preprocessing
+```
+2. Create a virtual environment (recommended):
+
+```
+$ python -m venv venv
+$ source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+3. Install dependencies:
+
+```
+$ pip install -r requirements.txt
+```
+4. Running the App
+```
+$ python app.py
+```
+The app will launch and provide a local URL (typically http://127.0.0.1:7860) that you can open in your browser.
+
+## Requirements
+The app requires the following Python packages:
+
+- gradio
+- nltk
+- regex
+- contractions
+
+All dependencies are listed in the requirements.txt file.
+
+## Usage Guide
+1. Enter text in the input box or try the provided examples
+2. Configure processing options:
+    - Enable/disable text cleaning and its sub-operations
+    - Choose NLP processing steps (stopword removal, stemming, lemmatization)
+3. Click "Process Text" to see the step-by-step transformations
+4. Explore:
+    - Green text = Added content
+    - Red strikethrough = Removed content
+    - Purple = Stemmed words
+    - Blue = Lemmatized words
+
+## Example Inputs
+Try these sample inputs to see the preprocessing in action:
+1. "Check out https://nlp.stanford.edu!!! I've been studying NLP since 2020. @StanfordNLP rocks!"
+2. "The café's spécialités cost $25.99 each - don't miss out!!! 😊 #delicious @foodie"
+3. "Meeting at 5:30 PM. Please be on time!!! We're excited @team!!!"
+
+## Features Overview
+Text Cleaning Options:
+- Lowercase conversion
+- Contraction expansion
+- Accent/dialect removal
+- URL removal
+- Non-word/non-whitespace character removal
+- Punctuation removal
+- Digit removal
+- Extra whitespace removal
+- Repeated punctuation handling
+- Twitter handler removal
+
+NLP Processing:
+- Tokenization with word highlighting
+- Stopword identification and removal
+- Stemming (Porter Stemmer)
+- Lemmatization (WordNet Lemmatizer)
+- Token ID generation and mapping
+
+## Best Practices
 - Order Matters: Always lowercase first, remove URLs before punctuation
-
 - Context Awareness: Don't remove numbers if they're meaningful (e.g., product codes)
-
 - Performance: Pre-compile regex patterns for repeated use
-
 - Customization: Adapt cleaning steps to your specific text domain
 
-📌 **Remember**: There's no one-size-fits-all solution. The optimal preprocessing steps depend on your specific use case and text domain.    
-=======
-⚫ Black: Unchanged content <br>            
->>>>>>> f7a50053343222561e1f4feb1f86b17cd05c0423
+
+📌 **Remember**: There's no one-size-fits-all solution. The optimal preprocessing steps depend on your specific use case and text domain. 
+
+## Contributing
+Contributions are welcome! Here's how to contribute:
+1. Fork the repository
+2. Create a new branch (git checkout -b feature/your-feature)
+3. Commit your changes (git commit -m 'Add some feature')
+4. Push to the branch (git push origin feature/your-feature)
+5. Open a pull request
+
+Please ensure your code follows PEP 8 style guidelines and includes appropriate tests.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+- NLTK library for NLP functionality
+- Gradio for the interactive interface
+- Stanford NLP Group for inspiration and resources
+
+Happy preprocessing! For questions or feedback, please open an issue on GitHub. 
+
+   
