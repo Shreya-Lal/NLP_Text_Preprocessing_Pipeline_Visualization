@@ -6,6 +6,11 @@
 Welcome! This app visually demonstrates essential preprocessing steps in NLP—like tokenization, stemming, and lemmatization— <b>before</b> diving into code.By using this visualization tool, you'll develop an intuitive understanding of how each preprocessing step affects your text data, helping you make better decisions when preparing text for your NLP applications. 
 
 <img src="nlp.png" alt="Alt text" width="400"/>
+![Watch the Video]("nlp_text_processing.mp4")
+
+Welcome! This app visually demonstrates essential preprocessing steps in NLP—like tokenization, stemming, and lemmatization— <b>before</b> diving into code.By using this visualization tool, you'll develop an intuitive understanding of how each preprocessing step affects your text data, helping you make better decisions when preparing text for your NLP applications. 
+
+![Image]("nlp.png")
 
 ## Explanation and Usage
 ### What is Text Pre-processing?
@@ -49,6 +54,7 @@ Our app uses a visual system to help you understand each transformation:
 
 🔵 Blue: Lemmatized words (dictionary form) <br>
 
+<<<<<<< HEAD
 ⚫ Black: Unchanged content <br>   
 
 ### Best Practices
@@ -61,3 +67,6 @@ Our app uses a visual system to help you understand each transformation:
 - Customization: Adapt cleaning steps to your specific text domain
 
 📌 **Remember**: There's no one-size-fits-all solution. The optimal preprocessing steps depend on your specific use case and text domain.    
+=======
+⚫ Black: Unchanged content <br>            
+>>>>>>> f7a50053343222561e1f4feb1f86b17cd05c0423
