@@ -18,15 +18,10 @@ Check out [Gradio Text Pre-processing App](https://huggingface.co/spaces/ShreyaL
 
 ## Key Features
 - 10+ Text Cleaning Operations: Lowercasing, contraction expansion, URL removal, accent removal, and more
-
 - Visual Transformation Tracking: Color-coded changes show exactly what each step modifies
-
 - Tokenization & NLP Processing: Stopword removal, stemming, and lemmatization
-
 - Token ID Generation: Create numerical representations of tokens
-
 - Interactive Examples: Pre-loaded examples to demonstrate different transformations
-
 - Educational Resources: Detailed explanations and references for each step
 
 ## Installation
@@ -34,7 +29,6 @@ Check out [Gradio Text Pre-processing App](https://huggingface.co/spaces/ShreyaL
 
 ```
 $ git clone https://github.com/yourusername/ nlp-text-preprocessing.git
-
 $ cd nlp-text-preprocessing
 ```
 2. Create a virtual environment (recommended):
